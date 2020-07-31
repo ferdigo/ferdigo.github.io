@@ -47,6 +47,24 @@ a {
     transition-duration: 0.5s;
 }
 
+.phone-base {
+    position: relative;
+}
+
+.phone {
+    display: none;
+    width: 250px;
+    margin: 10rem auto;
+    text-align: center;
+    padding-left: 35px;
+}
+
+.phone-base:hover+.phone {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+}
+
 main {
     justify-content: space-around;
     display: flex;
