@@ -1,47 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-body{
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap");
+body {
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 800px;
+    font-family: "Russo One", sans-serif;
+    background-image: url(/img/Contact-us-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    letter-spacing: 2px;
+}
 
-height:100vh;
-margin: 0 auto;
-max-width: 800px;
-font-family: Roboto;
-};
+.wrapper {
+    overflow: hidden;
+}
 
-.wrapper{
-overflow: hidden;
+.contacts-title {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 4rem 0 6rem;
 }
-.contacts-title{
-display:inline-box;
-text-transform:uppercase;
-text-align: center;
-margin: 4rem 0;
+
+a {
+    text-decoration: none;
+    color: black;
 }
-a{
-text-decoration:none;
-color: black;
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    float: left;
 }
-.contacts{
-  display:flex;
-  flex-direction: column; 
-  float: left;
-  flex-wrap: wrap;
-  
+
+.contacts__item {
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    display: inline-block;
+    transition-duration: 0.5s;
+    text-align: center;
 }
-.contacts__item{
-  padding: 5px;
-  width: 50px;
-  height: 50px;
-  margin: 5px;
-display:inline-block;
-transition-duration: 0.5s;
-text-align: center;
-  
+
+.contacts__item:hover {
+    color: orange;
+    transition-duration: 0.5s;
 }
-.contacts__item:hover{
-color: orange;
-  transition-duration: 0.5s;
+
+main {
+    justify-content: space-around;
+    display: flex;
 }
-.home-btn{
-display:inline-block;
-text-align: center;
+
+.home-btn {
+    display: inline-block;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+
+.home-btn:hover>* {
+    color: rgb(36, 123, 204);
+    transition-duration: 0.5s;
+}
+
+.home-btn:hover span {
+    color: rgb(76, 0, 255);
 }
